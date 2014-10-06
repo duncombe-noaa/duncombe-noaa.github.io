@@ -1,5 +1,19 @@
 <head> 
 <link rel="stylesheet" type="text/css" href="index.css">
+
+
+<STYLE TYPE="text/css">
+
+#menu1 { display : none }
+#menu2 { display : none }
+#menu3 { display : none }
+
+a:link {color:black; text-decoration:none}
+a:hover {color:blue; text-decoration:underline}
+
+</STYLE>
+
+
 </head>
 <body>
 
@@ -69,20 +83,76 @@ href="http://gliders.ioos.us">http://gliders.ioos.us</a>.
 <h2>Access from Menus</h2>
 
 We should have a header bar that 
-features drop down menus of the important pages:
+features drop down menus of the important pages:<br>
 
+This menu bar links to table of contents pages with the appropriate
+links:<br>
 
-<h2 class="offscreen">W3C Web Resources</h2> 
+<h2 class="offscreen">IOOS Documentation Sources</h2> 
 <div id="hmenu"> 
 <ul> 
-  <li><a href="http://www.w3.org/Consortium/activities">W3C Activities</a></li> 
-  <li><a href="http://www.w3.org/TR/">W3C Technical Reports</a></li> 
-  <li><a href="http://www.w3.org/Consortium/siteindex">W3C Site Index</a></li> 
-  <li><a href="http://www.w3.org/Consortium/new-to-w3c">New Visitors</a></li> 
-  <li><a href="http://www.w3.org/Consortium/">About W3C</a></li> 
-  <li><a href="http://www.w3.org/Consortium/join">Join W3C</a></li> 
-  <li><a href="http://www.w3.org/Consortium/contact">Contact W3C</a></li> 
+  <!--<li><a href="https://github.com/ioos/ioos.github.io">Projects and
+      Software Development Activities</a></li> -->
+  <li><a href="projects.html">Projects and Software Development Activities</a></li> 
+  <li><a href="guidelines.html">Guidelines and Specifications</a></li> 
+  <li><a href="https://ioos.noaa.gov/index.html">About IOOS</a></li> 
 </ul>   
 </div> 
+
+This menu bar has drop down menus, skipping the "Table of Contents"-style
+pages:
+
+<TABLE BORDER="0">
+
+<TD VALIGN="top" Width="600">
+
+<SPAN onMouseOver="document.all.menu1.style.display = 'block'" 
+onMouseOut="document.all.menu1.style.display = 'block'"> 
+
+Projects and Software Development Activities<BR>
+
+</SPAN>
+
+<SPAN ID="menu1" onClick="document.all.menu1.style.display = 'none'">
+
+<A HREF="https://ioos.github.io/system-test">System Integration Test</A><BR>
+<A HREF="https://ioos.github.io/ncsos">ncSOS</A><BR>
+<A HREF="https://ioos.github.io/i52n">i52N and related activities</A><BR>
+<A HREF="https://ioos.github.io/pyoos">pyoos</A><BR>
+<A HREF="https://github.com/ioos/ioos.github.io">etc.</A><BR>
+<br>
+</SPAN>
+<br>
+
+<SPAN onMouseOver="document.all.menu2.style.display = 'block'" 
+onMouseOut="document.all.menu2.style.display = 'block'"> 
+
+Guidelines and specifications<BR>
+</span><br>
+
+
+<SPAN ID="menu2" onClick="document.all.menu2.style.display = 'none'">
+
+<A HREF="https://ioos.github.com/">Data provider guidelines</A><BR>
+<A HREF="https://ioos.github.io/sos-guidelines">SOS Guidelines</A><BR>
+<A HREF="https://github.com/dpsnowden/netcdf-guidelines">netCDF Guidelines</A><BR>
+<A HREF="https://ioos.github.io/ioos-csv-tsv/">ioos csv tsv</A><br>
+
+</SPAN>
+
+</TD>
+</TABLE>
+
+<br>
+
+<br>
+ 
+<br>
+
+<br>
+
+<br>
+
+
 
 </body>
